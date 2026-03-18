@@ -17,7 +17,7 @@ import com.uv.mentorias_api.repository.MentoriaRepository;
 public class MentoriaController {
 
     @Autowired
-    public MentoriaRepository repository;
+    private MentoriaRepository repository;
 
     @PostMapping
     public MentoriaModel crear(@RequestBody MentoriaModel mentoria){
