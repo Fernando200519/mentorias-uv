@@ -15,9 +15,8 @@ import com.uv.mentorias_api.repository.EstudianteRepository;
 @RestController
 @RequestMapping("/estudiantes")
 public class EstudianteController {
-    
     @Autowired
-    public EstudianteRepository repository;
+    private EstudianteRepository repository;
 
     @PostMapping
     public EstudianteModel crear(@RequestBody EstudianteModel estudiante){
